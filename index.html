@@ -2,17 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clock Using-JS</title>
-
+    <meta
+      name="description"
+      content="Travelly is a travel agency website that helps you pick out your holiday vacation"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/icons/travel-bag-svgrepo-com.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <title>Travelly| Travelling Agency</title>
   </head>
   <body>
-    <div id="clockContainer">
-      <div id="hour"></div>
-      <div id="minute"></div>
-      <div id="second"></div>
-    </div>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">TRAVELLY</h1>
+        <ul>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Travel Beyond Limits...</h2>
+      <h3>
+        Start your travel at an affordable price with Travelly <br />Contact us
+        now below.
+      </h3>
+      <button>Book Now</button>
+    </section>
+    <section id="benefits">
+      <header class="benefits-head">
+        <h2>The Perfect Travelling Experience</h2>
+        <h3>
+          We cover everything from picking the perfect hotel,<br />
+          flight and travelling destination.
+        </h3>
+      </header>
+    </section>
+    <section class="location">
+      <header class="location-head">
+        <h2>The Perfect Travel</h2>
+      </header>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <img src="/icons/plane-solid.svg" alt="" />
+          </div>
+          <h4>Travel</h4>
+          <p>Travel in over 250 countries with no efforts.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="/icons/youtube.svg" alt="" />
+          </div>
+          <h4>Youtube</h4>
+          <p>
+            For viewing the different experiences of people you can follow the
+            youtube link.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <img src="/icons/comment-solid.svg" alt="" />
+          </div>
+          <h4>Comment</h4>
+          <p>For any queries comment your doubt in the comment section.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="form-wrapper">
+        <header class="form-head">
+          <h2>Contact Us</h2>
+        </header>
+        <form>
+          <div class="name-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="email-form">
+            <label for="email">Email:</label>
+            <input type="email" name="email" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <h5>Travelly&copy;</h5>
+        <ul>
+          <li><a href="#"> <img src="/icons/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="#"> <img src="/icons/16724432111554469048.svg" alt="Twitter"></a></li>
+          <li><a href="#"> <img src="/icons/facebook-round-icon.svg" alt="Facebook"></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
