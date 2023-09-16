@@ -1,40 +1,239 @@
-#clockContainer {
-    position: relative;
-    margin: auto;
-    height: 40vw;
-    width: 40vw;
-    background: url(clock.png) no-repeat;
-    background-size: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+button{
+  padding:2rem 6rem;
+  background: rgb(94, 92, 92);
+  border:none;
+  color:white;
+  font-size:1.8rem;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;  
+}
+button:hover{
+  background: rgb(45, 92, 248);
+  font-size: 2.6rem;
+
+}
+li,
+button,
+label,
+p,
+input {
+  font-size: 2rem;
+}
+h2{
+  font-size: 4.8rem;
+}
+h3{
+  font-size:3rem;
+  font-weight:normal;
+}
+h4,h5{
+  font-size:2.8rem;
+}
+/* Nav Section  with Hero*/
+.main-head{
+  background:#131c27;
+  color:white;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+nav{
+  min-height: 10vh;
+  display:flex;
+  width:90%;
+  padding:2rem;
+  margin:auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul{
+  display:flex;
+  flex:2 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo{
+  flex:2 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight:200;
+}
+.hero{
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.7),transparent),url(/image/pexels-sevenstorm-juhaszimrus-443383.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h3{
+  padding: 5rem;
 }
 
-#hour, #minute, #second {
-    background: black;
-    border-radius: 10px;
-    position: absolute;
-    transform-origin: bottom;
+/* BENEFITS SECTION  */
+#benefits{
+  min-height: 100vh;
+  background: linear-gradient(rgba(31, 32, 32, 0.5),transparent),url(/image/pexels-vincent-rivaud-2265876.jpg);
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  color:rgb(3, 3, 3);
+}
+.benefits-head{
+  width:90%;
+  margin:auto;
+}
+.benefits-head h2{
+  padding:1rem 0rem;
+  text-decoration:underline;
+  text-decoration-thickness: 0.5rem;
+}
+.benefits-head h3{
+  padding:4rem 0rem;
+  color:rgba(248, 242, 242, 0.979);
+  text-size-adjust: ;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/*Location*/
+.location-head{
+  background: #343c44;
+  padding:3rem;
+  min-height: 20vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color:aliceblue;
+}
+.cards{
+  width:90%;
+  margin:auto;
+  display:flex;
+  flex-direction:row;
+  min-height: 80vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+  text-align: center;
+  box-shadow: 0px 10px 10px black;
+  flex:1 1 25rem;
+  min-height:40vh;
+  margin:2rem 5rem;
+}
+.cards img{
+  max-width: 25%;
+  margin:2rem;
+}
+.card-icon{
+  background:rgb(160, 158, 158);
+}
+.card h4,p{
+  padding:3rem;
+}
+#contact{
+  min-height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.7),transparent),url(/image/pexels-cottonbro-studio-3693901.jpg);
+  background-size: cover;
+  background-position: center;
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper{
+  background:linear-gradient(rgb(10, 10, 10,0.3),black);
+  width:60%;
+  border-radius:20px;
+}
+.form-head{
+  text-align: center;
+  padding:4rem;
+}
+.name-form,.email-form{
+  padding:3rem;
+  text-align:center;
+}
+.form-wrapper label{
+  margin:0rem 3rem;
+}
+.form-wrapper button{
+  width:100%;
+  padding:2rem;
+  margin-top:8rem;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+}
+form-wrapper input{
+  padding:1rem 3rem;
+}
+footer{
+  color:white;
 }
 
-#hour {
-    width: 1.8%;
-    height: 25%;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;
-
+.footer-wrapper{
+  display:flex;
+  padding:2rem;
+  background: #343c44;
+  width:100%;
+  flex-wrap:wrap;
+  margin:auto;
+  align-items: center;
+  min-height:10vh;
+}
+footer h5{
+  flex:1 1 20rem;
+}
+.footer-wrapper img{
+  height:5vh;
+  width:5vw;
+}
+footer ul{
+  display: flex;
+  flex-direction:row;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content:space-between;
+  align-items:center;
 }
 
-#minute {
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.89%;
-    opacity: 0.8;
-}
 
-#second {
-    width: 1%;
-    height: 40%;
-    top: 9%;
-    left: 49.25%;
-    opacity: 0.8;
+/*  MEDIA QUERY */
+@media screen and (max-width:932px) {{nav:text-align:center;}
+html{
+  font-size:45%;
+}
+#logo{
+  padding:2rem;
+  
+}
+}
+footer{
+  text-align: center;
+}
+footer h5{
+  padding-bottom: 3rem;
+}
+.form-wrapper{
+  width:100%;
 }
